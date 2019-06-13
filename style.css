@@ -1,12 +1,116 @@
+body {
+	font-family: arial;
+	font-size: small;
+	color: grey;
+}
 header{
   text-align: center;
   display: grid;
-  min-width: 500px;
-  grid-template-columns: 300px repeat(2, 60px) repeat(2, 40px);
-  grid-auto-rows: 50px;
+  grid-template-columns: auto repeat(2, 60px) 50px 50px;
+  grid-auto-rows: 30px;
 }
 
-main {
+.text {
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+.gmail {grid-column: 2;}
+
+.image {grid-column: 3;}
+
+.square {
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	display: grid;
+	grid-column: 4;
+	padding: 3px;
+	margin: 0 10px;
+}
+
+.small-square{
+	background-color: #4D4848;
+	width: 5px;
+	height: 5px;
+	align-self: center;
+	margin: 1px;
+	border-width: 1px;
+	border-color: white;
+}
+
+.email {
+  border-radius: 15px;
+  background: #EC8347; 
+  width: 30px;
+  height: 30px;
+  grid-column: 5;
+  color: white;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  align-content: center;
+  margin: 0 10px;
+}
+
+main div {
+  text-align: center;
+  margin-top: 30px;
+  vertical-align: center;
+}
+
+.main-pic {
+	margin-top: 150px;
+}
+
+div .form {
+	border-radius: 20px;
+	width: 40%;
+	height: 40px;
+	border: 0.5px solid #cccc;
+}
+
+button {
+	border-radius: 4px;
+	border-color: #F5F5F5;
+	background-color: #F5F5F5;
+	width: 10%;
+	height: 30px;
+	color: #7C7878;
+	margin: 5px;
+}
+
+
+footer {
+	display: block;
+	background-color: #F5F5F5;
+	height: 80px;
+	bottom: 0;
+	width: 100%;
+	bottom: 0;
+	color: #7C7878;
+	position: fixed;
+}
+
+footer .footer1 {
+	border-bottom: 0.5px solid #cccc;
+	border-top: 0.5px solid #cccc;
+}
+
+footer div {
+	vertical-align: middle;
+	padding: 6.8px 0;
+}
+
+footer .right {
+	float: right;
+	text-align: right;
+	padding-right: 20px;
+}
+
+footer .left {
+	float: left;
+}
+
+footer div span {
+	margin: 0 10px;
 }
