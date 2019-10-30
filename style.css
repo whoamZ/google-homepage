@@ -1,4 +1,8 @@
-html, body {margin-left: 0}
+/*Btw ada beberapa css naming convention menarik yang bisa dibaca as reference
+	1) BEM http://getbem.com/
+	2) SMACSS http://smacss.com/
+	3) OOCSS https://github.com/stubbornella/oocss/wiki
+Personally aku pake BEM buat semua css yang aku bikin sih, ini lebih ke arah personal preference -->html, body {margin-left: 0}*/
 
 body {
 	font-family: arial;
@@ -6,6 +10,7 @@ body {
 	color: grey;
 }
 
+/*Nice grid usage, tapi inconsistent indentation :( */
 header{
   text-align: center;
   display: grid;
@@ -19,6 +24,7 @@ header{
 	align-items: center;
 }
 
+/*My personal opinion (not too sure apakah ini best practice atau bukan), kayaknya lebih bagus di enter deh kurungnya, jadi kalo mau nambah css baru juga jadi lebih gampang*/
 .gmail {grid-column: 2;}
 
 .image {grid-column: 3;}
@@ -42,6 +48,8 @@ header{
 	border-color: white;
 }
 
+/*Inconsistent indentation, kalo 2, 2 semua kalo 4, 4 semua*/
+/*Sama kalo tabs, tabs semua kalau spaces, spaces semua. Di python bakal sering error itu :p*/
 .email {
   border-radius: 15px;
   background: #EC8347; 
@@ -82,7 +90,7 @@ button {
 	margin: 5px;
 }
 
-
+/*Nice, footer dikumpulin semua di bawah jadi nyari stuffnya gampang*/
 footer {
 	display: block;
 	background-color: #F5F5F5;
